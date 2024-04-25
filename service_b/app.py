@@ -46,4 +46,4 @@ def complete_task(task_id):
     return jsonify({"message": "Task marked as completed"})
 
 if __name__ == "__main__":
-    app.run(port=5001)
+    app.run(port=5001, debug=False, use_reloader=False)
